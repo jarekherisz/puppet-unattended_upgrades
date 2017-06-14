@@ -25,7 +25,6 @@ class unattended_upgrades (
 
   $_auto = merge($::unattended_upgrades::default_auto, $auto)
   assert_type(Unattended_upgrades::Auto, $_auto)
-
   $_backup = merge($::unattended_upgrades::default_backup, $backup)
   assert_type(Unattended_upgrades::Backup, $_backup)
 
